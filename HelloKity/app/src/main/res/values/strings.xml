@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">KD</string>
+    <string-array name="algoritm">
+        <item>Максимин игрока А</item>
+        <item>Минимакс игрока В</item>
+        <item>Удаление НЛО стратегий игрока 1</item>
+        <item>Удаление НЛО стратегий игрока 2</item>
+        <item>Слабо доминируемые стратегии игрока 1</item>
+        <item>Слабо доминируемые стратегии игрока 2</item>
+        <item>Строго доминируемые стратегии игрока 1</item>
+        <item>Строго доминируемые стратегии игрока 2</item>
+        <item>Равновесие по НЭШу в чистых стратегиях</item>
+        <item>Hавновесия по Нэшу в смешанных стратегия в матрице 2х2</item>
+    </string-array>
+</resources>

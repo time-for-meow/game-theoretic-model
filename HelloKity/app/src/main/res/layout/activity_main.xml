@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/r3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Вас приветствует приложение-ассистент!"
+        android:textAlignment="center"
+        android:textColor="#292828"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196" />
+
+    <TextView
+        android:id="@+id/autoCompleteTextView2"
+        android:layout_width="315dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Стратегии 2 игрока"
+        android:textAlignment="center"
+        android:textColor="#323030"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="315dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Стратегии 1 игрока"
+        android:textAlignment="center"
+        android:textColor="#323030"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout1"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout1"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout1"
+        android:layout_width="314dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/button1matrix"
+        app:layout_constraintEnd_toEndOf="@+id/button1matrix">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/StrategyA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CF98D8"
+            android:hint="Enter the strategy of the first player"
+            android:inputType="text"
+            android:text="a1,b1,c1,d1,e1"
+            android:textColor="#3C3A3A"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="314dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2matrix"
+        app:layout_constraintStart_toStartOf="@+id/button2matrix">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/StrategyB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CF98D8"
+            android:hint="Enter the strategy of the second player"
+            android:inputType="text"
+            android:text="a2,b2,c2,d2,e2"
+            android:textColor="#3C3A3A"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button2matrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CF98D8"
+        android:onClick="playTwo"
+        android:text="TwoMatrix"
+        android:textColor="#3C3A3A"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.801" />
+
+    <Button
+        android:id="@+id/button1matrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CF98D8"
+        android:onClick="playOne"
+        android:text="OneMatrix"
+        android:textColor="#3C3A3A"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.374"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.801" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
